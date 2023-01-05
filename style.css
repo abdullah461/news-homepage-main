@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/* ## Colors */
+
+:root{
+/* ### Primary */
+    --primarySoftorange: hsl(35,77%, 62%);
+    --primarySoftred: hsl(5, 85%, 63%);
+
+/* ### Neutral */
+--neutralOffwhite: hsl(36, 100%, 99%);
+--neutralGrayishblue: hsl(233, 8%, 79%);
+--neutralDarkgrayishblue: hsl(236, 13%, 42%);
+--nuetralVerydarkblue: hsl(240, 100%, 5%);
+}
+
+/* Nav bar */
+body{
+    padding: 2em 5em 0 5em;
+}
+nav{
+    margin-bottom: 1.5em;
+}
+nav .container{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+nav .container ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+nav .container ul li{
+    list-style: none;
+    display: flex;  
+}
+nav .container ul li a{
+    text-decoration: none;
+    color: var(--neutralDarkgrayishblue);
+    cursor: pointer;
+}
+nav .container ul li a:hover{
+    color: var(--primarySoftred);
+}
+
+/* main */
+main{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    gap: 3em;
+}
+main .content{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    gap: 30px;
+}
+main .content .banner{
+    background-image: url(./assets/images/image-web-3-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+main .content article{
+    display: flex;
+    justify-content: space-between; 
+}
+main .content article .text h1{
+    font-size: 48px;
+    line-height: 1em;
+    letter-spacing: 2px;
+}
+main .content article .paragraph-btn{
+    margin-right: 25px;
+}
+main .content article .paragraph-btn P {
+   font-size: 18px;
+   line-height: 25px;
+   letter-spacing: 2px;
+   margin-bottom: 30px;
+   color: var(--neutralDarkgrayishblue);
+}
+main .content article .paragraph-btn button{
+    padding: 12px 50px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--primarySoftred);
+    border-style: none;
+    cursor: pointer;
+}
+main .content article .paragraph-btn button:hover{
+    background-color: var(--nuetralVerydarkblue);
+}
+/* aside */
+main aside{
+    width: 30%;
+    background-color: var(--nuetralVerydarkblue);
+}
+main aside article{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 15px;
+}
+main aside article h1{
+    font-size: 38px;
+    color: var(--primarySoftorange);
+}
+main aside article .headline{
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--neutralGrayishblue);
+}
+main aside article .headline h5{
+    color: var(--neutralOffwhite);
+    font-size: 18px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+main aside article .headline h5:hover{
+    color: var(--primarySoftorange);
+}
+main aside article .headline p{
+    color: var(--neutralGrayishblue);
+    font-size: 18px;
+}
+/* bottom */
+.bottom{
+    display: flex;
+    margin-top: 4em;
+    justify-content: space-between;
+}
+.bottom .tab{
+    display: flex;
+    gap: 30px;
+
+}
+.bottom .tab img{
+    width: 150px;
+    height: 150px;
+}
+.bottom .tab article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bottom .tab article h2{
+    font-size: 42px;
+    color: var(--neutralGrayishblue);
+}
+.bottom .tab article p:nth-child(2){
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.bottom .tab article p:nth-child(2):hover{
+    color: var(--primarySoftred);
+}
+.bottom .tab article p{
+    font-size: 16px;
+}
+
+/* mobile responsive */
+@media screen and (max-width: 375px) {
+    
+}
